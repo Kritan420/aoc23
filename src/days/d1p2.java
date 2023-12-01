@@ -2,7 +2,6 @@ package days;
 
 import util.Input;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
@@ -34,7 +33,7 @@ public class d1p2 {
 
         int sum = 0;
         String line;
-        
+
         for (int i = 0; i < lines.size(); i++) {
             line = lines.get(i);
 

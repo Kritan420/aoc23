@@ -2,6 +2,10 @@ package util;
 
 import java.io.*;
 import java.util.*;
+import java.util.List;
+import java.
+import javafx.util.*;
+import java.awt.*;
 
 public class Input {
 
@@ -216,6 +220,31 @@ public class Input {
             pairs.add(new Pair<>(first, second));
         }
         return pairs;
+    }
+
+    /**
+     * Reads the input data as a list of Point objects
+     * 
+     * splitSign a string that specifies the delimiter for the input data
+     * @return a list of Point objects that represent the coordinates in the input
+     *         data
+     */
+    public List<Point> ReadPoints(String splitSign) throws FileNotFoundException {
+        // Create a Scanner to read the input data from a file
+        Scanner scan = new Scanner(new File(fileName));
+        // Create a list to store the points
+        List<Point> points = new ArrayList<>();
+        // Loop through each line of input
+        while (scan.hasNextLine()) {
+            // Split the line by the split sign and parse the x and y values
+            String[] parts = scan.nextLine().split(splitSign);
+            int x = Integer.parseInt(parts[0]);
+            int y = Integer.parseInt(parts[1]);
+            // Create a new Point object and add it to the list
+            points.add(new Point(x, y));
+        }
+        // Return the list of points
+        return points;
     }
 
 }
