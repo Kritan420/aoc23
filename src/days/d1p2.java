@@ -15,12 +15,12 @@ public class d1p2 {
 
         HashMap<String, String> map = new LinkedHashMap<>();
         map.put("oneight", "oneeight");
+        map.put("twone", "twoone");
         map.put("threeight", "threeeight");
         map.put("fiveight", "fiveeight");
-        map.put("nineight", "nineeight");
-        map.put("twone", "twoone");
         map.put("sevenine", "sevennine");
         map.put("eightwo", "eighttwo");
+        map.put("nineight", "nineeight");
         map.put("one", "1");
         map.put("two", "2");
         map.put("three", "3");
