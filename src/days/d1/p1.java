@@ -1,10 +1,10 @@
-package days;
+package days.d1;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import util.Input;
 
-public class d1p1 {
+public class p1 {
 
     public static void main(String[] args) throws FileNotFoundException {
 

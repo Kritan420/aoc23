@@ -1,11 +1,11 @@
-package days;
+package days.d1;
 
 import util.Input;
 
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class d1p2 {
+public class p2 {
 
     public static void main(String[] args) throws FileNotFoundException {
 
